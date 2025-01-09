@@ -1,0 +1,14 @@
+<div class="card mt-5">
+  <div class="card-header">Item list</div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let preke of prekes; let i=index">
+        {{ preke.pavadinimas }} {{ preke.kiekis }}
+        <button class="btn btn-danger btn-sm float-end" (click)="istrinti(i)">Delete item</button>
+      </li>
+      <button class="btn btn-danger btn-sm float-end" (click)="istrinti_viska()">Delete items</button>
+    </ul>
+
+
+  </div>
+</div>
